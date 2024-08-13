@@ -7,8 +7,21 @@ btnLight.addEventListener('click',()=>{
         content.classList.remove('hidden');
     }
 })
+btnLight.addEventListener('click',()=>{
+    if (content.classList.contains('hidden')){
+        content.classList.add('hidden');
+    }
+})
+
 btnDark.addEventListener('click',()=>{
     if (!content.classList.contains('hidden')){
         content.classList.add('hidden');
     }
 })
+
+const button = document.getElementById('myButton');
+const tooltip = document.getElementById('tooltip');
+
+button.addEventListener('click', () => {
+  tooltip.classList.toggle('hidden');
+}); 

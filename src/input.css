@@ -1,57 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .main {
-    @apply w-[88%] flex flex-col justify-between mx-auto bg-white mt-16 rounded-lg h-[70%] font-Manrope shadow-sm relative
+  @apply w-[88%] sm:w-[60%] lg:w-[50%] flex flex-col xl:flex-row justify-between mx-auto  bg-white mt-16 xl:mt-64   rounded-lg xl:h-72  font-Manrope shadow-sm xl:shadow-lg relative;
 }
 .image {
-@apply rounded-t-lg h-52  object-cover
+  @apply rounded-t-lg xl:rounded-t-none xl:rounded-l-lg h-52 xl:h-full xl:w-5/12 object-cover;
 }
-.content{
-    @apply mt-9 mb-5 mx-8
+.content {
+  @apply mt-9 mb-5 mx-8 flex flex-col justify-between ;
 }
-.title{
-    @apply font-bold text-[#48556a]
+.title {
+  @apply font-bold text-[#48556a] xl:text-xl;
 }
-.description{
-    @apply  text-xs  my-3.5 font-bold text-[#9eafc2] leading-relaxed
-    
+.description {
+  @apply text-xs xl:text-sm my-3.5 font-bold xl:font-medium text-[#9eafc2] leading-relaxed;
 }
-.author-container{
-    @apply flex justify-between items-center mt-10
+.author-container {
+  @apply flex justify-between items-center mt-10 xl:mt-0;
 }
-.author{
-   @apply flex justify-between items-center
+.author {
+  @apply flex justify-between items-center;
 }
-.authorImage{
-    @apply size-10 rounded-full
+.authorImage {
+  @apply size-10 rounded-full;
 }
-.info{
-    @apply ml-5
+.info {
+  @apply ml-5;
 }
-.authorName{
-    @apply text-xs font-bold text-[#48556a]
- }
-.postDate{
-    @apply text-xs font-thin text-[#9eafc2]
+.authorName {
+  @apply text-xs xl:text-sm font-bold text-[#48556a];
 }
-.shareBtnLight{
-    @apply size-8 rounded-full bg-[#EFF5F9] flex justify-center items-center
+.postDate {
+  @apply text-xs xl:text-sm font-thin text-[#9eafc2];
 }
-.shareContainer{
-    @apply h-14 w-full p-8 bg-[#49556B] text-[#9eafc2] rounded-b-lg absolute bottom-0 justify-between items-center
+.shareBtnLight {
+  @apply cursor-pointer relative size-8 rounded-full bg-[#EFF5F9] flex justify-center items-center;
 }
-.shareTitle{
-    @apply tracking-[5px] text-sm 
+.shareContainer {
+  @apply h-14 w-full p-8 bg-[#49556B] text-[#9eafc2] rounded-b-lg absolute bottom-0 justify-between items-center transition-all duration-500 xl:hidden;
 }
-.shareLinks{
-    @apply flex justify-between items-center
+.shareTitle {
+  @apply tracking-[5px] text-sm;
 }
-.shareItem{
-    @apply ml-3
+.shareLinks {
+  @apply flex justify-between items-center;
 }
-.shareBtnDark{
-    @apply size-8 rounded-full bg-[#6A7D94] flex justify-center items-center 
+.shareItem {
+  @apply ml-3;
+}
+.shareBtnDark {
+  @apply cursor-pointer xl:hidden size-8 rounded-full bg-[#6A7D94] flex justify-center items-center;
 }
