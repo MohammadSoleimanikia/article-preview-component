@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main {
+    @apply w-[88%] flex flex-col justify-between mx-auto bg-white mt-16 rounded-lg h-[70%] font-Manrope shadow-sm relative
+}
+.image {
+@apply rounded-t-lg h-52  object-cover
+}
+.content{
+    @apply mt-9 mb-5 mx-8
+}
+.title{
+    @apply font-bold text-[#48556a]
+}
+.description{
+    @apply  text-xs  my-3.5 font-bold text-[#9eafc2] leading-relaxed
+    
+}
+.author-container{
+    @apply flex justify-between items-center mt-10
+}
+.author{
+   @apply flex justify-between items-center
+}
+.authorImage{
+    @apply size-10 rounded-full
+}
+.info{
+    @apply ml-5
+}
+.authorName{
+    @apply text-xs font-bold text-[#48556a]
+ }
+.postDate{
+    @apply text-xs font-thin text-[#9eafc2]
+}
+.shareBtnLight{
+    @apply size-8 rounded-full bg-[#EFF5F9] flex justify-center items-center
+}
+.shareContainer{
+    @apply h-14 w-full p-8 bg-[#49556B] text-[#9eafc2] rounded-b-lg absolute bottom-0 justify-between items-center
+}
+.shareTitle{
+    @apply tracking-[5px] text-sm 
+}
+.shareLinks{
+    @apply flex justify-between items-center
+}
+.shareItem{
+    @apply ml-3
+}
+.shareBtnDark{
+    @apply size-8 rounded-full bg-[#6A7D94] flex justify-center items-center 
+}
