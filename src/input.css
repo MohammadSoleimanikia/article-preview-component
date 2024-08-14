@@ -37,7 +37,7 @@
   @apply text-xs xl:text-sm font-thin text-[#9eafc2];
 }
 .shareBtnLight {
-  @apply cursor-pointer relative size-8 rounded-full bg-[#EFF5F9] flex justify-center items-center;
+  @apply xl:hidden cursor-pointer relative size-8 rounded-full bg-[#EFF5F9] flex justify-center items-center;
 }
 .shareContainer {
   @apply h-14 w-full p-8 bg-[#49556B] text-[#9eafc2] rounded-b-lg absolute bottom-0 justify-between items-center transition-all duration-500 xl:hidden;
@@ -53,4 +53,15 @@
 }
 .shareBtnDark {
   @apply cursor-pointer xl:hidden size-8 rounded-full bg-[#6A7D94] flex justify-center items-center;
+}
+
+/* -------------------------------------------------------------------------------------------------- */
+.toolTipBtn{
+    @apply relative hidden xl:flex cursor-pointer  size-8 rounded-full bg-[#EFF5F9]  justify-center items-center;
+}
+.tooltip-text{
+    @apply absolute w-60 h-10 bg-[#49556B] -top-14 -left-[105px]
+}
+.arrow{
+  @apply absolute left-1/2 transform -translate-x-1/2 top-full w-0 h-0 border-l-8 border-r-8 border-t-8 border-transparent border-t-[#49556B]
 }

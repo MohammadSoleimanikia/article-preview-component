@@ -18,10 +18,3 @@ btnDark.addEventListener('click',()=>{
         content.classList.add('hidden');
     }
 })
-
-const button = document.getElementById('myButton');
-const tooltip = document.getElementById('tooltip');
-
-button.addEventListener('click', () => {
-  tooltip.classList.toggle('hidden');
-}); 
