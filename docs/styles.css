@@ -574,6 +574,15 @@ video {
   background-color: rgb(236 242 248 / var(--tw-bg-opacity));
 }
 
+.font-extralight{
+  font-weight: 200;
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .main{
   position: relative;
   margin-left: auto;
@@ -644,6 +653,12 @@ video {
   justify-content: space-between;
 }
 
+@media (min-width: 1280px){
+  .content{
+    margin-bottom: 2.25rem;
+  }
+}
+
 .title{
   font-weight: 700;
   --tw-text-opacity: 1;
@@ -670,8 +685,6 @@ video {
 
 @media (min-width: 1280px){
   .description{
-    font-size: 0.875rem;
-    line-height: 1.25rem;
     font-weight: 500;
   }
 }
@@ -858,4 +871,73 @@ video {
   border-color: transparent;
   --tw-border-opacity: 1;
   border-top-color: rgb(73 85 107 / var(--tw-border-opacity));
+}
+
+.tooltip-container{
+  position: relative;
+  display: none;
+  height: 1.25rem;
+}
+
+@media (min-width: 1280px){
+  .tooltip-container{
+    display: block;
+  }
+}
+
+.tooltip-link{
+  position: relative;
+  display: none;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(109 126 150 / var(--tw-bg-opacity));
+  padding: 0.5rem;
+}
+
+@media (min-width: 1280px){
+  .tooltip-link{
+    display: flex;
+  }
+}
+
+.tooltip-box{
+  position: absolute;
+  bottom: 3rem;
+  left: -100px;
+  display: flex;
+  height: 3.5rem;
+  width: 16rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(73 85 107 / var(--tw-bg-opacity));
+  padding: 0.25rem;
+  text-align: center;
+}
+
+.tooltip-box::before {
+  /* Arrow shape for the bottom of the tooltip */
+  position: absolute;
+  top: 100%;
+  left: 40%;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-width: 15px;
+  --tw-border-opacity: 1;
+  border-color: rgb(73 85 107 / var(--tw-border-opacity));
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
+.hide{
+  display: none;
 }

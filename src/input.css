@@ -10,13 +10,13 @@
   @apply rounded-t-lg xl:rounded-t-none xl:rounded-l-lg h-52 xl:h-full xl:w-5/12 object-cover;
 }
 .content {
-  @apply mt-9 mb-5 mx-8 flex flex-col justify-between ;
+  @apply mt-9 mb-5 mx-8 xl:mb-9  flex flex-col justify-between ;
 }
 .title {
   @apply font-bold text-[#48556a] xl:text-xl;
 }
 .description {
-  @apply text-xs xl:text-sm my-3.5 font-bold xl:font-medium text-[#9eafc2] leading-relaxed;
+  @apply text-xs  my-3.5 font-bold xl:font-medium text-[#9eafc2] leading-relaxed;
 }
 .author-container {
   @apply flex justify-between items-center mt-10 xl:mt-0;
@@ -64,4 +64,20 @@
 }
 .arrow{
   @apply absolute left-1/2 transform -translate-x-1/2 top-full w-0 h-0 border-l-8 border-r-8 border-t-8 border-transparent border-t-[#49556B]
+}
+.tooltip-container{
+  @apply relative h-5 hidden xl:block
+}
+.tooltip-link{
+  @apply p-2 hidden xl:flex cursor-pointer relative size-8 rounded-full bg-[#6D7E96] justify-center items-center;
+}
+.tooltip-box{
+  @apply flex justify-center items-center bg-[#49556B] p-1 h-14 w-64 absolute bottom-12 -left-[100px] rounded-lg text-center
+}
+.tooltip-box::before {
+  /* Arrow shape for the bottom of the tooltip */
+  @apply content-[''] absolute top-full left-[40%] size-2 border-[15px] border-[#49556B] border-l-transparent border-r-transparent border-b-transparent;
+}
+.hide{
+  @apply hidden
 }

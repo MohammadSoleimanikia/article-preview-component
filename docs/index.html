@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Article preview</title>
     <link rel="stylesheet" href="styles.css" />
     <script defer src="./index.js"></script>
   </head>
@@ -41,20 +41,29 @@
             />
           </div>
           <!-- tool tip ---------------------------------------------- -->
-          <div id="toolTipBtn" class="toolTipBtn">
-            <img
-              class="size-3"
-              src="assets/imgs/icon-share.svg"
-              alt="share button"
-            />
-            <div>
-              <span class="tooltip-text" id="top"
-            tool tip</span
-          >
-          <div class="arrow"></div>
-            
-          </div>
-
+          <div class="tooltip-container">
+  <button id="tooltip-link" class="tooltip-link">
+    <img
+      class="size-3"
+      src="assets/imgs/icon-share-light.svg"
+      alt="share button"
+    />
+  </button>
+  <div class="tooltip-box hidden">
+    <div class="shareLinks">
+      <h2 class="shareTitle text-white font-extralight">SHARE</h2>
+      <a class="shareItem" href="#">
+        <img src="assets/imgs/icon-facebook.svg" alt="Facebook" />
+      </a>
+      <a class="shareItem" href="#">
+        <img src="assets/imgs/icon-twitter.svg" alt="Twitter" />
+      </a>
+      <a class="shareItem" href="#">
+        <img src="assets/imgs/icon-pinterest.svg" alt="Pinterest" />
+      </a>
+    </div>
+  </div>
+</div>
 
         </footer>
       </section>
