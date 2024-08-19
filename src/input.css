@@ -69,8 +69,9 @@
   @apply relative h-5 hidden xl:block
 }
 .tooltip-link{
-  @apply p-2 hidden xl:flex cursor-pointer relative size-8 rounded-full bg-[#6D7E96] justify-center items-center;
+  @apply p-2 hidden xl:flex cursor-pointer relative size-8 rounded-full justify-center items-center;
 }
+
 .tooltip-box{
   @apply flex justify-center items-center bg-[#49556B] p-1 h-14 w-64 absolute bottom-12 -left-[100px] rounded-lg text-center
 }

@@ -894,8 +894,6 @@ video {
   align-items: center;
   justify-content: center;
   border-radius: 9999px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(109 126 150 / var(--tw-bg-opacity));
   padding: 0.5rem;
 }
 
